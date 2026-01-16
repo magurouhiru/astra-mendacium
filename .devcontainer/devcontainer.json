@@ -1,11 +1,15 @@
 {
-  "name": "React (Bun)",
+  "name": "astra-mendacium-devcontainer",
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "workspaceFolder": "/app",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached",
+  "runArgs": ["--name", "astra-mendacium-devcontainer", "--hostname", "bun"],
   "customizations": {
     "vscode": {
       "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
         "editor.formatOnSave": true,
         "editor.defaultFormatter": null,
         "[typescript]": {
