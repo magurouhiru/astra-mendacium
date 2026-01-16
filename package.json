@@ -7,10 +7,14 @@
     "dev": "bun --hot src/index.ts",
     "start": "NODE_ENV=production bun src/index.ts",
     "build": "bun run build.ts",
-    "fmt": "bunx --bun biome format ** .devcontainer/devcontainer.json",
-    "fmt:fix": "bunx --bun biome format --write ** .devcontainer/devcontainer.json",
-    "lint": "bunx --bun biome lint ** .devcontainer/devcontainer.json",
-    "lint:fix": "bunx --bun biome lint --write ** .devcontainer/devcontainer.json"
+    "fmt": "bunx --bun biome format ** .devcontainer .vscode",
+    "fmt:fix": "bunx --bun biome format --write ** .devcontainer .vscode",
+    "lint": "bunx --bun biome lint ** .devcontainer .vscode",
+    "lint:fix": "bunx --bun biome lint --write ** .devcontainer .vscode",
+    "lint:fix:unsafe": "bunx --bun biome lint --write --unsafe ** .devcontainer .vscode",
+    "check": "bunx --bun biome check ** .devcontainer .vscode",
+    "check:fix": "bunx --bun biome check --write ** .devcontainer .vscode",
+    "check:fix:unsafe": "bunx --bun biome check --write --unsafe ** .devcontainer .vscode"
   },
   "dependencies": {
     "bun-plugin-tailwind": "^0.1.2",
