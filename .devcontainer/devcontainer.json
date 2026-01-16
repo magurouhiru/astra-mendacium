@@ -7,11 +7,25 @@
 		"vscode": {
 			"settings": {
 				"editor.formatOnSave": true,
+				"editor.defaultFormatter": null,
+				"[typescript]": {
+					"editor.defaultFormatter": "biomejs.biome"
+				},
+				"[typescriptreact]": {
+					"editor.defaultFormatter": "biomejs.biome"
+				},
+				"[json]": {
+					"editor.defaultFormatter": "biomejs.biome"
+				},
+				"[css]": {
+					"editor.defaultFormatter": "biomejs.biome"
+				},
+				"[html]": {
+					"editor.defaultFormatter": "biomejs.biome"
+				},
 				"css.lint.unknownAtRules": "ignore"
 			},
-			"extensions": [
-				"biomejs.biome"
-			]
+			"extensions": ["biomejs.biome"]
 		}
 	}
 }

@@ -7,10 +7,10 @@
     "dev": "bun --hot src/index.ts",
     "start": "NODE_ENV=production bun src/index.ts",
     "build": "bun run build.ts",
-    "fmt": "bunx --bun biome format ./src",
-    "fmt:fix": "bunx --bun biome format --write ./src",
-    "lint": "bunx --bun biome lint ./src",
-    "lint:fix": "bunx --bun biome lint --write ./src"
+    "fmt": "bunx --bun biome format **",
+    "fmt:fix": "bunx --bun biome format --write **",
+    "lint": "bunx --bun biome lint **",
+    "lint:fix": "bunx --bun biome lint --write **"
   },
   "dependencies": {
     "bun-plugin-tailwind": "^0.1.2",
