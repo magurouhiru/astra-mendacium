@@ -5,9 +5,12 @@
 	},
 	"customizations": {
 		"vscode": {
+			"settings": {
+				"editor.formatOnSave": true,
+				"css.lint.unknownAtRules": "ignore"
+			},
 			"extensions": [
-				"dbaeumer.vscode-eslint",
-				"esbenp.prettier-vscode"
+				"biomejs.biome"
 			]
 		}
 	}
