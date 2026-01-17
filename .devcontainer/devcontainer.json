@@ -36,7 +36,11 @@
         },
         "css.lint.unknownAtRules": "ignore"
       },
-      "extensions": ["biomejs.biome", "bradlc.vscode-tailwindcss"]
+      "extensions": [
+        "biomejs.biome",
+        "bradlc.vscode-tailwindcss",
+        "github.vscode-github-actions"
+      ]
     }
   }
 }
