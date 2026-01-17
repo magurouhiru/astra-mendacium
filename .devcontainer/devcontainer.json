@@ -5,6 +5,13 @@
   },
   "workspaceFolder": "/app",
   "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached",
+  "mounts": [
+    {
+      "source": "astra-mendacium-devcontainer__node_modules",
+      "target": "/app/node_modules",
+      "type": "volume"
+    }
+  ],
   "runArgs": ["--name", "astra-mendacium-devcontainer", "--hostname", "bun"],
   "customizations": {
     "vscode": {
