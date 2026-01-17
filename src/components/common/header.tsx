@@ -1,7 +1,7 @@
 import { Link } from "react-router";
-import Logo from "../../assets/logo.svg";
-import LogoText from "../../assets/logo-text.svg";
-import { PATHS } from "../../router";
+import Logo from "@/assets/logo.svg";
+import LogoText from "@/assets/logo-text.svg";
+import { PATHS } from "@/router";
 
 function Header() {
   return (

@@ -1,6 +1,6 @@
-import Footer from "./components/common/footer";
-import Header from "./components/common/header";
-import "./index.css";
+import Footer from "@/components/common/footer";
+import Header from "@/components/common/header";
+import "@/index.css";
 import { Outlet } from "react-router";
 
 function App() {
