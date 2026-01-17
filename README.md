@@ -1,21 +1,6 @@
 # bun-react-tailwind-template
 
-To install dependencies:
+見た目だけは本物っぽいけど、嘘の占いサイトです。  
+Astra：星、Mendacium（メンダシウム）：ラテン語で「嘘」「偽り」解説：「星の嘘」という意味になります。  
+響きが学術用語っぽくて非常に安っぽさがなく、本格的に見えます。by Gemini
 
-```bash
-bun install
-```
-
-To start a development server:
-
-```bash
-bun dev
-```
-
-To run for production:
-
-```bash
-bun start
-```
-
-This project was created using `bun init` in bun v1.3.6. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.

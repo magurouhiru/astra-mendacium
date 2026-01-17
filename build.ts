@@ -34,8 +34,11 @@ Example:
 }
 
 const toCamelCase = (str: string): string =>
+  // biome-ignore lint/suspicious/noTsIgnore: デフォルトの箇所なのでそのままにしておく
+  // @ts-ignore
   str.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
 
+// biome-ignore lint/suspicious/noExplicitAny: デフォルトの箇所なのでそのままにしておく
 const parseValue = (value: string): any => {
   if (value === "true") return true;
   if (value === "false") return false;
@@ -59,6 +62,8 @@ function parseArgs(): Partial<Bun.BuildConfig> {
 
     if (arg.startsWith("--no-")) {
       const key = toCamelCase(arg.slice(5));
+      // biome-ignore lint/suspicious/noTsIgnore: デフォルトの箇所なのでそのままにしておく
+      // @ts-ignore
       config[key] = false;
       continue;
     }
@@ -68,6 +73,8 @@ function parseArgs(): Partial<Bun.BuildConfig> {
       (i === args.length - 1 || args[i + 1]?.startsWith("--"))
     ) {
       const key = toCamelCase(arg.slice(2));
+      // biome-ignore lint/suspicious/noTsIgnore: デフォルトの箇所なのでそのままにしておく
+      // @ts-ignore
       config[key] = true;
       continue;
     }
@@ -86,9 +93,15 @@ function parseArgs(): Partial<Bun.BuildConfig> {
 
     if (key.includes(".")) {
       const [parentKey, childKey] = key.split(".");
+      // biome-ignore lint/suspicious/noTsIgnore: デフォルトの箇所なのでそのままにしておく
+      // @ts-ignore
       config[parentKey] = config[parentKey] || {};
+      // biome-ignore lint/suspicious/noTsIgnore: デフォルトの箇所なのでそのままにしておく
+      // @ts-ignore
       config[parentKey][childKey] = parseValue(value);
     } else {
+      // biome-ignore lint/suspicious/noTsIgnore: デフォルトの箇所なのでそのままにしておく
+      // @ts-ignore
       config[key] = parseValue(value);
     }
   }
