@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="layout">
       <Header />
-      <main className="content">
-        <Outlet />
+      <main className="px-4 py-6">
+        <div className="container mx-auto">
+          <Outlet />
+        </div>
       </main>
       <Footer />
     </div>
