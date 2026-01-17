@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { PATHS } from "@/router";
+import { PATHS } from "../../router";
 
 function Footer() {
   const linkItems = Object.values(PATHS)

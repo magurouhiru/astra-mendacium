@@ -5,23 +5,20 @@
       "type": "npm",
       "script": "dev",
       "problemMatcher": [],
-      "label": "npm: dev",
-      "detail": "bun --hot src/index.ts"
+      "label": "npm: dev"
     },
     {
       "type": "npm",
       "script": "build",
       "group": "build",
       "problemMatcher": [],
-      "label": "npm: build",
-      "detail": "bun run build.ts"
+      "label": "npm: build"
     },
     {
       "type": "npm",
       "script": "check:fix:unsafe",
       "problemMatcher": [],
-      "label": "npm: check:fix:unsafe",
-      "detail": "bunx --bun biome check --write --unsafe ** .devcontainer .vscode"
+      "label": "npm: check:fix:unsafe"
     }
   ]
 }

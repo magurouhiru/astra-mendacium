@@ -1,11 +1,11 @@
 import { createBrowserRouter, type RouteObject } from "react-router";
-import App from "@/App";
-import Home from "@/pages/home";
-import Test1 from "@/pages/test1";
-import Test2 from "@/pages/test2";
-import Test2_1 from "@/pages/test2_1";
-import Test2_2 from "@/pages/test2_2";
-import Test2_3 from "@/pages/test2_3";
+import App from "./App";
+import Home from "./pages/home";
+import Test1 from "./pages/test1";
+import Test2 from "./pages/test2";
+import Test2_1 from "./pages/test2_1";
+import Test2_2 from "./pages/test2_2";
+import Test2_3 from "./pages/test2_3";
 
 export const SEGMENTS = {
   home: "",
