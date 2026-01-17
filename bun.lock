@@ -5,6 +5,7 @@
     "": {
       "name": "astra-mendacium",
       "dependencies": {
+        "@lingui/core": "^5.8.0",
         "@lingui/react": "^5.8.0",
         "@tailwindcss/vite": "^4.1.18",
         "bun-plugin-tailwind": "^0.1.2",

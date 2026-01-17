@@ -7,6 +7,8 @@ export default defineConfig({
     {
       path: "<rootDir>/src/locales/{locale}/messages",
       include: ["src"],
+      exclude: ["**/node_modules/**"],
     },
   ],
+  compileNamespace: "ts",
 });
