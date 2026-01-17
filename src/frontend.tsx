@@ -10,8 +10,13 @@ import { RouterProvider } from "react-router";
 import router from "@/router";
 
 function start() {
-  const root = createRoot(document.getElementById("root")!);
-  root.render(<RouterProvider router={router} />);
+  const rootElement = document.getElementById("root");
+  if (!rootElement) {
+    throw new Error("Root element not found");
+  } else {
+    const root = createRoot(rootElement);
+    root.render(<RouterProvider router={router} />);
+  }
 }
 
 if (document.readyState === "loading") {
