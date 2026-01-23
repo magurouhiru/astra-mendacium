@@ -1,5 +1,18 @@
 import { t } from "@lingui/core/macro";
-import type * as v from "valibot";
+import * as v from "valibot";
+
+export function toNullIfEmpty<
+  T extends v.BaseSchema<string, unknown, v.BaseIssue<unknown>>,
+>(schema: T) {
+  return v.union([
+    schema,
+    v.pipe(
+      v.string(),
+      v.empty("empty string"),
+      v.transform(() => null),
+    ),
+  ]);
+}
 
 export const minLengthString: v.ErrorMessage<
   v.MinLengthIssue<string, number>

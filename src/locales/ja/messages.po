@@ -14,12 +14,12 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. placeholder {0}: issue.requirement
-#: src/utils/validators.ts:6
+#: src/utils/validators.ts:25
 msgid "{0}文字以上で入力してください"
 msgstr "{0}文字以上で入力してください"
 
 #. placeholder {0}: issue.requirement
-#: src/utils/validators.ts:10
+#: src/utils/validators.ts:29
 msgid "{0}文字以内で入力してください"
 msgstr "{0}文字以内で入力してください"
 
