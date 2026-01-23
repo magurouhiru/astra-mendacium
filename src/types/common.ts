@@ -1,3 +1,8 @@
 import * as v from "valibot";
+import { maxLengthString, minLengthString } from "@/utils/validators";
 
-export const textSchema = v.pipe(v.string(), v.minLength(1), v.maxLength(255));
+export const textShort = v.pipe(
+  v.string(),
+  v.minLength(1, minLengthString),
+  v.maxLength(10, maxLengthString),
+);

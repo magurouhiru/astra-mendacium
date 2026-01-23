@@ -1,1 +1,1 @@
-/*eslint-disable*/import type{Messages}from"@lingui/core";export const messages=JSON.parse("{\"JJVwaq\":[\"ホーム画面\"]}")as Messages;
+/*eslint-disable*/import type{Messages}from"@lingui/core";export const messages=JSON.parse("{\"J8YKqV\":[[\"0\"],\"文字以内で入力してください\"],\"JJVwaq\":[\"ホーム画面\"],\"jBG25x\":[\"保存\"],\"jq1mFa\":[[\"0\"],\"文字以上で入力してください\"],\"wKj0zc\":[\"設定\"]}")as Messages;

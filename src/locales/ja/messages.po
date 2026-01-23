@@ -13,6 +13,24 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#. placeholder {0}: issue.requirement
+#: src/utils/validators.ts:6
+msgid "{0}文字以上で入力してください"
+msgstr "{0}文字以上で入力してください"
+
+#. placeholder {0}: issue.requirement
+#: src/utils/validators.ts:10
+msgid "{0}文字以内で入力してください"
+msgstr "{0}文字以内で入力してください"
+
 #: src/pages/home.tsx:6
 msgid "ホーム画面"
 msgstr "ホーム画面"
+
+#: src/pages/setting.tsx:27
+msgid "保存"
+msgstr "保存"
+
+#: src/pages/setting.tsx:23
+msgid "設定"
+msgstr "設定"
