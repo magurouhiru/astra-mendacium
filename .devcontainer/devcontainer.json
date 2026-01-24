@@ -13,6 +13,7 @@
     }
   ],
   "runArgs": ["--name", "astra-mendacium-devcontainer", "--hostname", "bun"],
+  "postStartCommand": ["bun", "ci"],
   "customizations": {
     "vscode": {
       "settings": {
