@@ -14,12 +14,17 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. placeholder {0}: issue.requirement
-#: src/utils/validators.ts:25
+#: src/utils/validators.ts:27
+msgid "{0}以上の要素を入力してください"
+msgstr "{0}以上の要素を入力してください"
+
+#. placeholder {0}: issue.requirement
+#: src/utils/validators.ts:19
 msgid "{0}文字以上で入力してください"
 msgstr "{0}文字以上で入力してください"
 
 #. placeholder {0}: issue.requirement
-#: src/utils/validators.ts:29
+#: src/utils/validators.ts:23
 msgid "{0}文字以内で入力してください"
 msgstr "{0}文字以内で入力してください"
 
@@ -27,10 +32,10 @@ msgstr "{0}文字以内で入力してください"
 msgid "ホーム画面"
 msgstr "ホーム画面"
 
-#: src/pages/setting.tsx:27
+#: src/pages/setting.tsx:46
 msgid "保存"
 msgstr "保存"
 
-#: src/pages/setting.tsx:23
+#: src/pages/setting.tsx:42
 msgid "設定"
 msgstr "設定"
