@@ -1,14 +1,8 @@
 import * as v from "valibot";
-import { textShort } from "@/types/common";
-import { minLengthArray, toNullIfEmpty } from "@/utils/validators";
-
-export const settingSchema = v.object({
-  text: toNullIfEmpty(textShort),
-  array: v.pipe(
-    v.array(v.object({ aa: toNullIfEmpty(textShort) })),
-    v.transform((list) => list.filter((item) => item.aa !== null)),
-    v.minLength(1, minLengthArray),
-  ),
-});
+import { zodiacSignSchema } from "@/types/common";
+import { toNullIfEmpty } from "@/utils/validators";
 
 export type SettingSchema = v.InferOutput<typeof settingSchema>;
+export const settingSchema = v.object({
+  zodiacSign: toNullIfEmpty(zodiacSignSchema),
+});

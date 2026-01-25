@@ -19,6 +19,11 @@ msgid "{0}以上の要素を入力してください"
 msgstr "{0}以上の要素を入力してください"
 
 #. placeholder {0}: issue.requirement
+#: src/utils/validators.ts:31
+msgid "{0}以下の要素を入力してください"
+msgstr "{0}以下の要素を入力してください"
+
+#. placeholder {0}: issue.requirement
 #: src/utils/validators.ts:19
 msgid "{0}文字以上で入力してください"
 msgstr "{0}文字以上で入力してください"
@@ -28,14 +33,70 @@ msgstr "{0}文字以上で入力してください"
 msgid "{0}文字以内で入力してください"
 msgstr "{0}文字以内で入力してください"
 
+#: src/utils/trance.ts:23
+msgid "いて座"
+msgstr "いて座"
+
+#: src/utils/trance.ts:29
+msgid "うお座"
+msgstr "うお座"
+
+#: src/utils/trance.ts:9
+msgid "おうし座"
+msgstr "おうし座"
+
+#: src/utils/trance.ts:17
+msgid "おとめ座"
+msgstr "おとめ座"
+
+#: src/utils/trance.ts:7
+msgid "おひつじ座"
+msgstr "おひつじ座"
+
+#: src/utils/trance.ts:13
+msgid "かに座"
+msgstr "かに座"
+
+#: src/utils/trance.ts:21
+msgid "さそり座"
+msgstr "さそり座"
+
+#: src/utils/trance.ts:15
+msgid "しし座"
+msgstr "しし座"
+
+#: src/utils/trance.ts:19
+msgid "てんびん座"
+msgstr "てんびん座"
+
+#: src/utils/trance.ts:11
+msgid "ふたご座"
+msgstr "ふたご座"
+
 #: src/pages/home.tsx:6
 msgid "ホーム画面"
 msgstr "ホーム画面"
 
-#: src/pages/setting.tsx:46
+#: src/utils/trance.ts:27
+msgid "みずがめ座"
+msgstr "みずがめ座"
+
+#: src/utils/trance.ts:25
+msgid "やぎ座"
+msgstr "やぎ座"
+
+#: src/pages/setting.tsx:35
 msgid "保存"
 msgstr "保存"
 
-#: src/pages/setting.tsx:42
+#: src/utils/validators.ts:34
+msgid "有効な星座を選択してください"
+msgstr "有効な星座を選択してください"
+
+#: src/utils/trance.ts:31
+msgid "未選択"
+msgstr "未選択"
+
+#: src/pages/setting.tsx:31
 msgid "設定"
 msgstr "設定"

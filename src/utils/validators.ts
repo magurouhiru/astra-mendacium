@@ -14,14 +14,21 @@ export function toNullIfEmpty<
   ]);
 }
 
-export const minLengthString: v.ErrorMessage<
+export const minLengthStringMessage: v.ErrorMessage<
   v.MinLengthIssue<string, number>
 > = (issue) => t`${issue.requirement}文字以上で入力してください`;
 
-export const maxLengthString: v.ErrorMessage<
+export const maxLengthStringMessage: v.ErrorMessage<
   v.MaxLengthIssue<string, number>
 > = (issue) => t`${issue.requirement}文字以内で入力してください`;
 
-export const minLengthArray: v.ErrorMessage<
+export const minLengthArrayMessage: v.ErrorMessage<
   v.MinLengthIssue<unknown[], number>
 > = (issue) => t`${issue.requirement}以上の要素を入力してください`;
+
+export const maxLengthArrayMessage: v.ErrorMessage<
+  v.MaxLengthIssue<unknown[], number>
+> = (issue) => t`${issue.requirement}以下の要素を入力してください`;
+
+export const nonZodiacSigns: v.ErrorMessage<v.PicklistIssue> = () =>
+  t`有効な星座を選択してください`;

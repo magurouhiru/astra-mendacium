@@ -1,8 +1,9 @@
 import { valibotResolver } from "@hookform/resolvers/valibot";
 import { Trans } from "@lingui/react/macro";
-import { useFieldArray, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { safeParse } from "valibot";
 import { settingSchema } from "@/types/setting";
+import { toZodiacSignLabel } from "@/utils/trance";
 
 function Setting() {
   function log() {
@@ -15,25 +16,13 @@ function Setting() {
     register,
     handleSubmit,
     getValues,
-    control,
-    trigger,
     formState: { errors },
   } = useForm({
     mode: "onTouched",
     defaultValues: {
-      text: "",
-      array: [
-        {
-          aa: "",
-        },
-      ],
+      zodiacSign: "",
     },
     resolver: valibotResolver(settingSchema, undefined, { mode: "sync" }),
-  });
-
-  const { append, remove, fields } = useFieldArray({
-    name: "array",
-    control,
   });
 
   return (
@@ -48,35 +37,24 @@ function Setting() {
       </div>
 
       <form onSubmit={handleSubmit((d) => console.log(d))}>
-        <input {...register("text")} />
-        {errors.text && <p>{errors.text.message}</p>}
-        <div>
-          {fields.map((field, index) => (
-            <div key={field.id}>
-              <input
-                {...register(`array.${index}.aa`, {
-                  onChange: () => trigger("array"),
-                })}
-              />
-              {errors.array?.[index]?.aa && (
-                <p>{errors.array?.[index].aa.message}</p>
-              )}
-              <button
-                type="button"
-                onClick={() => {
-                  remove(index);
-                  trigger("array");
-                }}
-              >
-                remove
-              </button>
-            </div>
-          ))}
-        </div>
-        {errors.array && <p>{errors.array.message}</p>}
-        <button type="button" onClick={() => append({ aa: "" })}>
-          append
-        </button>
+        <select {...register("zodiacSign")}>
+          <option value="">{toZodiacSignLabel(null)}</option>
+          <option value="Aries">{toZodiacSignLabel("Aries")}</option>
+          <option value="Taurus">{toZodiacSignLabel("Taurus")}</option>
+          <option value="Gemini">{toZodiacSignLabel("Gemini")}</option>
+          <option value="Cancer">{toZodiacSignLabel("Cancer")}</option>
+          <option value="Leo">{toZodiacSignLabel("Leo")}</option>
+          <option value="Virgo">{toZodiacSignLabel("Virgo")}</option>
+          <option value="Libra">{toZodiacSignLabel("Libra")}</option>
+          <option value="Scorpio">{toZodiacSignLabel("Scorpio")}</option>
+          <option value="Sagittarius">
+            {toZodiacSignLabel("Sagittarius")}
+          </option>
+          <option value="Capricorn">{toZodiacSignLabel("Capricorn")}</option>
+          <option value="Aquarius">{toZodiacSignLabel("Aquarius")}</option>
+          <option value="Pisces">{toZodiacSignLabel("Pisces")}</option>
+        </select>
+        {errors.zodiacSign && <p>{errors.zodiacSign.message}</p>}
       </form>
     </div>
   );
