@@ -2,7 +2,7 @@ import { valibotResolver } from "@hookform/resolvers/valibot";
 import { Trans } from "@lingui/react/macro";
 import { useForm } from "react-hook-form";
 import { safeParse } from "valibot";
-import { settingSchema } from "@/types/setting";
+import { type SettingSchema, settingSchema } from "@/types/setting";
 import { toZodiacSignLabel } from "@/utils/trance";
 
 function Setting() {
@@ -11,6 +11,11 @@ function Setting() {
     console.log(errors);
     console.log(safeParse(settingSchema, getValues()));
   }
+
+  const submit = (data: SettingSchema) => {
+    console.log("submit", data);
+    localStorage.setItem("setting", JSON.stringify(data));
+  };
 
   const {
     register,
@@ -36,7 +41,7 @@ function Setting() {
         </button>
       </div>
 
-      <form onSubmit={handleSubmit((d) => console.log(d))}>
+      <form onSubmit={handleSubmit(submit)}>
         <select {...register("zodiacSign")}>
           <option value="">{toZodiacSignLabel(null)}</option>
           <option value="Aries">{toZodiacSignLabel("Aries")}</option>
@@ -55,6 +60,7 @@ function Setting() {
           <option value="Pisces">{toZodiacSignLabel("Pisces")}</option>
         </select>
         {errors.zodiacSign && <p>{errors.zodiacSign.message}</p>}
+        <button type="submit">submit</button>
       </form>
     </div>
   );
