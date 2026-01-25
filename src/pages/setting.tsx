@@ -1,32 +1,25 @@
 import { valibotResolver } from "@hookform/resolvers/valibot";
 import { Trans } from "@lingui/react/macro";
 import { useForm } from "react-hook-form";
-import { safeParse } from "valibot";
+import { getSetting, setSetting } from "@/services/setting-service";
 import { type SettingSchema, settingSchema } from "@/types/setting";
 import { toZodiacSignLabel } from "@/utils/trance";
 
 function Setting() {
-  function log() {
-    console.log(getValues());
-    console.log(errors);
-    console.log(safeParse(settingSchema, getValues()));
-  }
+  const setting = getSetting();
 
   const submit = (data: SettingSchema) => {
     console.log("submit", data);
-    localStorage.setItem("setting", JSON.stringify(data));
+    setSetting(data);
   };
 
   const {
     register,
     handleSubmit,
-    getValues,
     formState: { errors },
   } = useForm({
     mode: "onTouched",
-    defaultValues: {
-      zodiacSign: "",
-    },
+    defaultValues: setting,
     resolver: valibotResolver(settingSchema, undefined, { mode: "sync" }),
   });
 
@@ -35,11 +28,6 @@ function Setting() {
       <h2>
         <Trans>設定</Trans>
       </h2>
-      <div>
-        <button type="button" onClick={log}>
-          <Trans>保存</Trans>
-        </button>
-      </div>
 
       <form onSubmit={handleSubmit(submit)}>
         <select {...register("zodiacSign")}>
@@ -60,7 +48,9 @@ function Setting() {
           <option value="Pisces">{toZodiacSignLabel("Pisces")}</option>
         </select>
         {errors.zodiacSign && <p>{errors.zodiacSign.message}</p>}
-        <button type="submit">submit</button>
+        <button type="submit">
+          <Trans>保存</Trans>
+        </button>
       </form>
     </div>
   );
