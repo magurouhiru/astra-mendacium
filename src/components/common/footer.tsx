@@ -3,7 +3,12 @@ import { PATHS } from "@/router";
 
 function Footer() {
   const linkItems = Object.values(PATHS)
-    .filter((path) => path.label !== "Test2_3")
+    .filter(
+      (path) =>
+        path.label !== "Sample Question" &&
+        path.label !== "Sample Answer" &&
+        path.label !== "Test2_3",
+    )
     .map((path) => (
       <Link
         key={path.label}

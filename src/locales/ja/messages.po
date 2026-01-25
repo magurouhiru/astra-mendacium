@@ -61,6 +61,10 @@ msgstr "かに座"
 msgid "さそり座"
 msgstr "さそり座"
 
+#: src/pages/sample-home.tsx:7
+msgid "サンプルの占い"
+msgstr "サンプルの占い"
+
 #: src/utils/trance.ts:15
 msgid "しし座"
 msgstr "しし座"
