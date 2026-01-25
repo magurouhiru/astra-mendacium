@@ -14,22 +14,22 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. placeholder {0}: issue.requirement
-#: src/utils/validators.ts:27
+#: src/utils/validators.ts:28
 msgid "{0}以上の要素を入力してください"
 msgstr "{0}以上の要素を入力してください"
 
 #. placeholder {0}: issue.requirement
-#: src/utils/validators.ts:31
+#: src/utils/validators.ts:32
 msgid "{0}以下の要素を入力してください"
 msgstr "{0}以下の要素を入力してください"
 
 #. placeholder {0}: issue.requirement
-#: src/utils/validators.ts:19
+#: src/utils/validators.ts:20
 msgid "{0}文字以上で入力してください"
 msgstr "{0}文字以上で入力してください"
 
 #. placeholder {0}: issue.requirement
-#: src/utils/validators.ts:23
+#: src/utils/validators.ts:24
 msgid "{0}文字以内で入力してください"
 msgstr "{0}文字以内で入力してください"
 
@@ -101,7 +101,7 @@ msgstr "みずがめ座"
 msgid "やぎ座"
 msgstr "やぎ座"
 
-#: src/pages/setting.tsx:35
+#: src/pages/setting.tsx:41
 msgid "保存"
 msgstr "保存"
 
@@ -109,7 +109,7 @@ msgstr "保存"
 msgid "占いを始める"
 msgstr "占いを始める"
 
-#: src/utils/validators.ts:34
+#: src/utils/validators.ts:35
 msgid "有効な星座を選択してください"
 msgstr "有効な星座を選択してください"
 
@@ -121,6 +121,6 @@ msgstr "未選択"
 msgid "結果を見る"
 msgstr "結果を見る"
 
-#: src/pages/setting.tsx:31
+#: src/pages/setting.tsx:37
 msgid "設定"
 msgstr "設定"

@@ -1,5 +1,5 @@
-import { settingSchema, type SettingSchema } from "@/types/setting";
 import * as v from "valibot";
+import { type SettingSchema, settingSchema } from "@/types/setting";
 
 const LOCAL_STORAGE_KEY = "setting";
 
@@ -18,6 +18,6 @@ export function getSetting(): SettingSchema {
   return DEFAULT_SETTING;
 }
 
-export function saveSetting(setting: SettingSchema) {
+export function setSetting(setting: SettingSchema) {
   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(setting));
 }

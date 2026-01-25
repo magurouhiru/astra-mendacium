@@ -11,6 +11,7 @@ export function toNullIfEmpty<
       v.empty("empty string"),
       v.transform(() => null),
     ),
+    v.null(),
   ]);
 }
 

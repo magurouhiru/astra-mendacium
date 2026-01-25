@@ -1,11 +1,10 @@
 import { Link } from "react-router";
 import { PATHS } from "@/router";
+import { getSetting } from "@/services/setting-service";
 import { toZodiacSignLabel } from "@/utils/trance";
 
 function SampleAnswer() {
-  const settingJson = localStorage.getItem("setting") ?? "{}";
-  const setting = JSON.parse(settingJson);
-  console.log("setting", setting);
+  const setting = getSetting();
 
   return (
     <div>
