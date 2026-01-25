@@ -3,7 +3,12 @@ import { PATHS } from "@/router";
 
 function Footer() {
   const linkItems = Object.values(PATHS)
-    .filter((path) => path.label !== "Test2_3")
+    .filter(
+      (path) =>
+        path.label !== "Sample Question" &&
+        path.label !== "Sample Answer" &&
+        path.label !== "Test2_3",
+    )
     .map((path) => (
       <Link
         key={path.label}
@@ -16,7 +21,7 @@ function Footer() {
   return (
     <footer className="bg-gray-600 p-4 text-white">
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 md:flex-row">
-        <nav className="flex gap-6">{linkItems}</nav>
+        <nav className="flex flex-wrap gap-6">{linkItems}</nav>
         <div className="text-gray-300 text-sm">
           © 2026 Astra Mendacium. All rights reserved.
         </div>

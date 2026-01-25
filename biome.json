@@ -8,6 +8,7 @@
   "files": {
     "includes": [
       "**/*.{html,css,ts,tsx,json}",
+      "!src/locales",
       ".devcontainer/devcontainer.json",
       "!node_modules",
       "!dist",

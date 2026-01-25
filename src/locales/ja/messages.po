@@ -1,0 +1,126 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-01-17 18:56+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: ja\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#. placeholder {0}: issue.requirement
+#: src/utils/validators.ts:27
+msgid "{0}以上の要素を入力してください"
+msgstr "{0}以上の要素を入力してください"
+
+#. placeholder {0}: issue.requirement
+#: src/utils/validators.ts:31
+msgid "{0}以下の要素を入力してください"
+msgstr "{0}以下の要素を入力してください"
+
+#. placeholder {0}: issue.requirement
+#: src/utils/validators.ts:19
+msgid "{0}文字以上で入力してください"
+msgstr "{0}文字以上で入力してください"
+
+#. placeholder {0}: issue.requirement
+#: src/utils/validators.ts:23
+msgid "{0}文字以内で入力してください"
+msgstr "{0}文字以内で入力してください"
+
+#: src/pages/sample-question.tsx:32
+msgid "あなたの星座を選んでください。"
+msgstr "あなたの星座を選んでください。"
+
+#: src/utils/trance.ts:23
+msgid "いて座"
+msgstr "いて座"
+
+#: src/utils/trance.ts:29
+msgid "うお座"
+msgstr "うお座"
+
+#: src/utils/trance.ts:9
+msgid "おうし座"
+msgstr "おうし座"
+
+#: src/utils/trance.ts:17
+msgid "おとめ座"
+msgstr "おとめ座"
+
+#: src/utils/trance.ts:7
+msgid "おひつじ座"
+msgstr "おひつじ座"
+
+#: src/utils/trance.ts:13
+msgid "かに座"
+msgstr "かに座"
+
+#: src/pages/sample-question.tsx:29
+msgid "これはサンプルの占いの質問です。"
+msgstr "これはサンプルの占いの質問です。"
+
+#: src/pages/sample-home.tsx:12
+msgid "これはサンプルの占いページです。"
+msgstr "これはサンプルの占いページです。"
+
+#: src/utils/trance.ts:21
+msgid "さそり座"
+msgstr "さそり座"
+
+#: src/pages/sample-home.tsx:9
+msgid "サンプルの占い"
+msgstr "サンプルの占い"
+
+#: src/utils/trance.ts:15
+msgid "しし座"
+msgstr "しし座"
+
+#: src/utils/trance.ts:19
+msgid "てんびん座"
+msgstr "てんびん座"
+
+#: src/utils/trance.ts:11
+msgid "ふたご座"
+msgstr "ふたご座"
+
+#: src/pages/home.tsx:6
+msgid "ホーム画面"
+msgstr "ホーム画面"
+
+#: src/utils/trance.ts:27
+msgid "みずがめ座"
+msgstr "みずがめ座"
+
+#: src/utils/trance.ts:25
+msgid "やぎ座"
+msgstr "やぎ座"
+
+#: src/pages/setting.tsx:35
+msgid "保存"
+msgstr "保存"
+
+#: src/pages/sample-home.tsx:15
+msgid "占いを始める"
+msgstr "占いを始める"
+
+#: src/utils/validators.ts:34
+msgid "有効な星座を選択してください"
+msgstr "有効な星座を選択してください"
+
+#: src/utils/trance.ts:31
+msgid "未選択"
+msgstr "未選択"
+
+#: src/pages/sample-question.tsx:59
+msgid "結果を見る"
+msgstr "結果を見る"
+
+#: src/pages/setting.tsx:31
+msgid "設定"
+msgstr "設定"
